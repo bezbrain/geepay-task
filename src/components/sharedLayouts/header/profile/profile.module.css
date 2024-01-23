@@ -16,3 +16,9 @@
 .profile__name > p {
   color: #787486;
 }
+
+@media screen and (max-width: 880px) {
+  .profile__name {
+    display: none;
+  }
+}
