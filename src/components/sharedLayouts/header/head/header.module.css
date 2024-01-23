@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-inline: 20px;
+  gap: 20px;
+}
+
+.left__hand__side {
+  border: 2px solid green;
+  width: 30%;
+  display: flex;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.right__hand__side {
+  border: 2px solid red;
+  width: 70%;
+  display: flex;
+}
