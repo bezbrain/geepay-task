@@ -17,7 +17,7 @@ const Header = () => {
       <div className={styles.right__hand__side}>
         <SearchInput />
         <Calendar />
-        <img src={solarBell} alt="Bell" />
+        <img src={solarBell} alt="Bell" className={styles.bell} />
         <Profile />
       </div>
     </div>
