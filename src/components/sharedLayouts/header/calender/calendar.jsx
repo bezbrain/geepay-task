@@ -5,7 +5,7 @@ import styles from "./calendar.module.css";
 const Calendar = () => {
   return (
     <div className={styles.calendar}>
-      <img src={solarCalendar} alt="Calendar" />
+      <img src={solarCalendar} alt="Calendar" title="November 15, 2023" />
       <p>November 15, 2023</p>
     </div>
   );

@@ -7,3 +7,9 @@
 .calendar > img {
   cursor: pointer;
 }
+
+@media screen and (max-width: 1130px) {
+  .calendar > p {
+    display: none;
+  }
+}
