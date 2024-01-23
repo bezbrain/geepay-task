@@ -25,3 +25,22 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+@media screen and (max-width: 740px) {
+  .search__input > input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .search__input > input {
+    width: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .search__input > input::placeholder {
+    color: transparent;
+  }
+  .search__input > img {
+    cursor: pointer;
+  }
+}
