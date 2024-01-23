@@ -11,7 +11,7 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.left__hand__side}>
         <img src={logo} alt="Logo" className={styles.logo} />
-        <h1>Dashboard</h1>
+        <h2>Dashboard</h2>
       </div>
 
       <div className={styles.right__hand__side}>
