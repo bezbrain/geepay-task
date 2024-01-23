@@ -10,6 +10,7 @@ import profileUser from "./profile-2user.png";
 import setting from "./setting-2.png";
 import trendUp from "./trend-up.png";
 import vector from "./Vector.png";
+import moon from "./moon 1.png";
 
 export {
   arrowRight,
@@ -24,4 +25,5 @@ export {
   setting,
   trendUp,
   vector,
+  moon,
 };
