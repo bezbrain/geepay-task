@@ -14,14 +14,15 @@ const SalesTrend = () => {
   return (
     <div className={styles.sales__trends}>
       <header>
-        <p>Sales Trend</p>
+        <p>Sales Trends</p>
         <div>
           <span>Short by:</span>
           <button>
-            Weekly <FaAngleDown />
+            Weekly <FaAngleDown className={styles.weekly__icon} />
           </button>
         </div>
       </header>
+
       <div>
         <canvas id="acquisitions"></canvas>
       </div>

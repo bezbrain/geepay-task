@@ -6,3 +6,31 @@
   width: 60%;
   height: fit-content;
 }
+
+.sales__trends > header {
+  margin-block: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sales__trends > header > p {
+  font-weight: 600;
+}
+
+.sales__trends > header > div {
+  display: flex;
+  align-items: center;
+}
+
+.sales__trends > header > div > button {
+  background-color: inherit;
+  margin-left: 10px;
+  border: 1px solid #eff1f3;
+  padding: 7px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
