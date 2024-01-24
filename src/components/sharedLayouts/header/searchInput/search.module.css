@@ -44,3 +44,13 @@
     cursor: pointer;
   }
 }
+@media screen and (max-width: 510px) {
+  .search__input > input {
+    width: 30px;
+    height: 40px;
+  }
+  .search__input > img {
+    right: 50%;
+    transform: translate(-20%, -50%);
+  }
+}

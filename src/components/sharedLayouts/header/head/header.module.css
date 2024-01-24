@@ -1,8 +1,10 @@
 .header {
+  /* border: 2px solid blue; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px;
+  background-color: #eff0f3;
+  padding: 20px;
   gap: 20px;
 }
 
@@ -43,8 +45,24 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
   .header {
     padding-inline: 1rem;
+  }
+  .left__hand__side {
+    width: 200px;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .left__hand__side > h2 {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .right__hand__side {
+    gap: 10px;
   }
 }
