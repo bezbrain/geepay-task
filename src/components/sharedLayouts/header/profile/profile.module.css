@@ -22,3 +22,9 @@
     display: none;
   }
 }
+@media screen and (max-width: 5100px) {
+  .profile__details > img {
+    width: 30px;
+    height: 30px;
+  }
+}

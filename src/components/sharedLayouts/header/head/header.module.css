@@ -66,3 +66,18 @@
     gap: 10px;
   }
 }
+@media screen and (max-width: 420px) {
+  .header {
+    gap: 10px;
+  }
+  .logo {
+    margin-right: 5px;
+  }
+
+  .left__hand__side > h2 {
+    margin-left: 5px;
+  }
+  .right__hand__side {
+    gap: 5px;
+  }
+}

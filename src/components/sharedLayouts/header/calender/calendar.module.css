@@ -13,3 +13,8 @@
     display: none;
   }
 }
+@media screen and (max-width: 420px) {
+  .calendar {
+    display: none;
+  }
+}
