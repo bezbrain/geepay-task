@@ -1,0 +1,32 @@
+.orders__con {
+  /* border: 2px solid red; */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+  height: fit-content;
+}
+
+.order__table {
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ebecf2;
+}
+
+.order__table thead tr th {
+  /* border-bottom: 1px solid #000; */
+  text-align: left;
+  color: #898989;
+  padding-block: 15px;
+}
+.order__table tbody tr {
+  border-bottom: 1px solid #000;
+}
+
+td {
+  padding-block: 15px;
+}
