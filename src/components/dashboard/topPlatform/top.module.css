@@ -1,7 +1,20 @@
 .top__platform {
   width: 40%;
-  padding: 10px;
+  padding: 20px 10px;
   border-radius: 10px;
   height: fit-content;
   background-color: #fff;
+}
+
+.top__platform > header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.top__platform > header > p:first-child {
+  font-weight: 600;
+}
+.top__platform > header > p:last-child {
+  color: #34caa5;
 }
