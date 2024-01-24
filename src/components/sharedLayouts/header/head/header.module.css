@@ -4,12 +4,13 @@
   align-items: center;
   justify-content: space-between;
   background-color: #eff0f3;
-  padding: 20px;
+  padding: 1rem 20px;
   gap: 20px;
+  border-bottom: 2px solid #ebecf2;
 }
 
 .left__hand__side {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 300px;
   display: flex;
   align-items: center;
@@ -19,6 +20,7 @@
   width: 40px;
   height: 40px;
   margin-right: 20px;
+  border: 2px solid #ebecf2;
 }
 
 .left__hand__side > h2 {
@@ -26,7 +28,7 @@
 }
 
 .right__hand__side {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 1100px;
   display: flex;
   justify-content: space-between;
@@ -47,7 +49,7 @@
 
 @media screen and (max-width: 510px) {
   .header {
-    padding-inline: 1rem;
+    padding: 1rem 10px;
   }
   .left__hand__side {
     width: 200px;
