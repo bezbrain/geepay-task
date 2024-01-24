@@ -30,3 +30,11 @@ td {
 td {
   padding-block: 15px;
 }
+
+.status__paid {
+  color: #34caa5;
+}
+
+.status__refund {
+  color: #ed544e;
+}

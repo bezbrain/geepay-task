@@ -1,13 +1,20 @@
 import React from "react";
+import { orderIcon } from "../../../../assets/icons/orderIcon";
 
-const OrderCard = () => {
+const OrderCard = ({ orderImg, name, date, amount, status, statusCol }) => {
   return (
     <tr>
-      <td>Marcus Balogun</td>
-      <td>Nov 15, 2023</td>
-      <td>$80,000</td>
-      <td>Paid</td>
-      <td>View</td>
+      <td>
+        <img src={orderImg} alt={name} />
+        <span>{name}</span>
+      </td>
+      <td>{date}</td>
+      <td>{amount}</td>
+      <td className={statusCol}>{status}</td>
+      <td>
+        <img src={orderIcon} alt="view" />
+        <span>View</span>
+      </td>
     </tr>
   );
 };

@@ -24,6 +24,14 @@ import {
   totalRefundImg,
 } from "../assets/images/graphImages";
 
+import {
+  cooper,
+  corey,
+  jaydon,
+  marcus,
+  philip,
+} from "../assets/images/dashboardImages";
+
 export const topIcons = [
   {
     id: 1,
@@ -111,5 +119,48 @@ export const chartData = [
     name: "Total Income",
     value: "$350.000",
     trend: "trendUp",
+  },
+];
+
+export const orderData = [
+  {
+    id: 1,
+    orderImg: marcus,
+    name: "Marcus Bergson",
+    date: "Nov 15, 2023",
+    amount: "$80,000",
+    status: "Paid",
+  },
+  {
+    id: 2,
+    orderImg: jaydon,
+    name: "Jaydon Vaccaro",
+    date: "Nov 15, 2023",
+    amount: "$150,000",
+    status: "Refund",
+  },
+  {
+    id: 3,
+    orderImg: corey,
+    name: "Corey Schleifer",
+    date: "Nov 14, 2023",
+    amount: "$87,000",
+    status: "Paid",
+  },
+  {
+    id: 4,
+    orderImg: cooper,
+    name: "Copper Press",
+    date: "Nov 14, 2023",
+    amount: "$100,000",
+    status: "Refund",
+  },
+  {
+    id: 5,
+    orderImg: philip,
+    name: "Phillip Lubin",
+    date: "Nov 14, 2023",
+    amount: "$78,000",
+    status: "Paid",
   },
 ];
