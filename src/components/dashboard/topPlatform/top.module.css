@@ -18,3 +18,38 @@
 .top__platform > header > p:last-child {
   color: #34caa5;
 }
+
+.platform__book,
+.platform__artisan,
+.platform__toy {
+  height: 15px;
+  width: 100%;
+  background-color: #f5f6f7;
+  border-radius: 20px;
+  margin-block: 15px;
+}
+.platform__book > div,
+.platform__artisan > div,
+.platform__toy > div {
+  border-radius: 20px;
+  height: 100%;
+}
+
+.platform__book > div {
+  background-color: #6160dc;
+  width: 55%;
+}
+
+.platform__artisan > div {
+  background-color: #54c5eb;
+  width: 40%;
+}
+
+.platform__toy > div {
+  background-color: #ffb74a;
+  width: 25%;
+}
+
+.top__platform > div > p {
+  font-weight: 600;
+}

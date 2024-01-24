@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./platformCard.module.css";
 
-const PlatformCard = () => {
+const PlatformCard = ({ color, name, amount, rate }) => {
   return (
     <div className={styles.top__platform__card}>
-      <p>Book Bazaar</p>
-      <div className={styles.platform__bar}>
+      <p>{name}</p>
+      <div className={color}>
         <div></div>
       </div>
 
       <footer>
-        <p>$2,500,000</p>
-        <p>+15%</p>
+        <p>{amount}</p>
+        <p>{rate}</p>
       </footer>
     </div>
   );

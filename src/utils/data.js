@@ -164,3 +164,27 @@ export const orderData = [
     status: "Paid",
   },
 ];
+
+export const topPlatformData = [
+  {
+    id: 1,
+    color: "purple",
+    name: "Book Bazaar",
+    amount: "$2,500,000",
+    rate: "+15%",
+  },
+  {
+    id: 2,
+    color: "offBlue",
+    name: "Artisan Aisle",
+    amount: "$1,800,000",
+    rate: "+10%",
+  },
+  {
+    id: 3,
+    color: "yellow",
+    name: "Toy Troop",
+    amount: "$1,200,000",
+    rate: "+8%",
+  },
+];

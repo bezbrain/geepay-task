@@ -1,16 +1,9 @@
-.platform__bar {
-  height: 15px;
-  width: 100%;
-  background-color: #f5f6f7;
-  border-radius: 20px;
-  margin-block: 15px;
+.top__platform__card {
+  margin-block: 30px;
 }
 
-.platform__bar > div {
-  background-color: #6160dc;
-  border-radius: 20px;
-  height: 100%;
-  width: 55%;
+.top__platform__card > p {
+  font-weight: 600;
 }
 
 .top__platform__card > footer {
