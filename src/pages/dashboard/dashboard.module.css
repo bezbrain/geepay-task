@@ -1,3 +1,11 @@
 .dashboard {
+  /* border: 2px solid red; */
+  width: 100%;
   padding: 1rem;
+  background-color: #fafafa;
+}
+
+.upper___section {
+  display: flex;
+  gap: 20px;
 }

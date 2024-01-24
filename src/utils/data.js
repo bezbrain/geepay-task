@@ -43,16 +43,6 @@ export const topIcons = [
     icon: infoCircle,
     name: "info-circle",
   },
-  // {
-  //   id: 7,
-  //   icon: frame,
-  //   name: "frame",
-  // },
-  // {
-  //   id: 8,
-  //   icon: vector,
-  //   name: "vector",
-  // },
 ];
 
 export const baseIcon = [
@@ -68,6 +58,29 @@ export const baseIcon = [
   },
   {
     id: 3,
+    icon: logout,
+    name: "logout",
+  },
+];
+
+export const chartData = [
+  {
+    id: 1,
+    icon: arrowRight,
+    name: "arrow",
+  },
+  {
+    id: 2,
+    icon: setting,
+    name: "setting",
+  },
+  {
+    id: 3,
+    icon: logout,
+    name: "logout",
+  },
+  {
+    id: 4,
     icon: logout,
     name: "logout",
   },

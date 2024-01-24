@@ -1,0 +1,56 @@
+.single__chart__card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  color: #898989;
+}
+
+.single__chart__card > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order__con {
+  border: 1px solid #dadddd;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order__con > img {
+  width: 20px;
+  height: 20px;
+}
+
+.single__chart__card > p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.single__chart__card > h3 {
+  margin-block: 10px;
+}
+
+.chart__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart__footer > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #34caa5;
+  font-size: 12px;
+  background-color: rgba(52, 202, 165, 0.12);
+  padding: 3px 6px;
+  border-radius: 20px;
+}
+
+.chart__footer > p {
+  font-size: 12px;
+}
