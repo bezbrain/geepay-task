@@ -1,9 +1,11 @@
 import React from "react";
+import SalesTrend from "../../components/dashboard/salesTrends/salesTrends";
+import styles from "./dashboard.module.css";
 
 const Dashboard = () => {
   return (
-    <main>
-      <p>This is the dashboard</p>
+    <main className={styles.dashboard}>
+      <SalesTrend />
     </main>
   );
 };

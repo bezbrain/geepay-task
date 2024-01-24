@@ -1,6 +1,6 @@
 .sidebar__section {
   border: 2px solid #ebecf2;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .side__bar {
@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 50px;
   background-color: #eff0f3;
   padding-inline: 20px;
 }
