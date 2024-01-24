@@ -1,10 +1,21 @@
 .orders__con {
   /* border: 2px solid red; */
   background-color: #fff;
-  padding: 10px;
+  padding: 20px 10px;
   border-radius: 10px;
   width: 60%;
   height: fit-content;
+}
+
+.orders__con > header {
+  display: flex;
+  justify-content: space-between;
+}
+.orders__con > header > p:first-child {
+  font-weight: 600;
+}
+.orders__con > header > p:last-child {
+  color: #34caa5;
 }
 
 .order__table {
@@ -33,8 +44,10 @@ td {
 
 .status__paid {
   color: #34caa5;
+  font-size: 14px;
 }
 
 .status__refund {
   color: #ed544e;
+  font-size: 14px;
 }

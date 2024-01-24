@@ -15,7 +15,7 @@ const Orders = () => {
   return (
     <div className={styles.orders__con}>
       <header>
-        <p>Orders</p>
+        <p>Last Orders</p>
         <p>See All</p>
       </header>
 
