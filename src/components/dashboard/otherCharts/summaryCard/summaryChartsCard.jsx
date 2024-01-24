@@ -1,24 +1,22 @@
 import React from "react";
 import styles from "./card.module.css";
-import { totalOrder, trendingUp } from "../../../../assets/icons/graphIcons";
-import { totalOrderImg } from "../../../../assets/images/graphImages";
 
-const SummaryChartsCard = () => {
+const SummaryChartsCard = ({ icon, image, name, value, footerImg, trend }) => {
   return (
     <div className={styles.single__chart__card}>
       <header>
         <div className={styles.order__con}>
-          <img src={totalOrder} alt="" />
+          <img src={icon} alt={name} />
         </div>
-        <img src={totalOrderImg} alt="" />
+        <img src={image} alt={name} />
       </header>
 
-      <p>Total Order</p>
-      <h3>350</h3>
+      <p>{name}</p>
+      <h3>{value}</h3>
 
       <footer className={styles.chart__footer}>
-        <div>
-          <img src={trendingUp} alt="" />
+        <div className={trend}>
+          <img src={footerImg} alt={name} />
           <span>23.5%</span>
         </div>
         <p>vs. previous month</p>

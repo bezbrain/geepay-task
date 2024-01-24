@@ -4,3 +4,25 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+
+.trend__up {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #34caa5;
+  font-size: 12px;
+  background-color: rgba(52, 202, 165, 0.12);
+  padding: 3px 6px;
+  border-radius: 20px;
+}
+
+.trend__down {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ed544e;
+  font-size: 12px;
+  background-color: rgba(237, 84, 78, 0.12);
+  padding: 3px 6px;
+  border-radius: 20px;
+}

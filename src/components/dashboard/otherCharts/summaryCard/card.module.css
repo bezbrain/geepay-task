@@ -2,7 +2,6 @@
   background-color: #fff;
   padding: 10px;
   border-radius: 10px;
-  color: #898989;
 }
 
 .single__chart__card > header {
@@ -25,9 +24,14 @@
   height: 20px;
 }
 
+.single__chart__card > header > img {
+  width: 80px;
+}
+
 .single__chart__card > p {
   margin-top: 10px;
   font-weight: 500;
+  color: #898989;
 }
 
 .single__chart__card > h3 {
@@ -38,17 +42,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.chart__footer > div {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: #34caa5;
-  font-size: 12px;
-  background-color: rgba(52, 202, 165, 0.12);
-  padding: 3px 6px;
-  border-radius: 20px;
 }
 
 .chart__footer > p {
