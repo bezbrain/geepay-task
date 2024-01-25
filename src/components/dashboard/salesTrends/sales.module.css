@@ -1,5 +1,5 @@
 .sales__trends {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   background-color: #fff;
   padding: 10px;
   border-radius: 10px;
@@ -8,7 +8,7 @@
 }
 
 .sales__trends > header {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin-block: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -35,6 +35,11 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+}
+
+.bar__chart__con {
+  /* border: 2px solid red; */
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 990px) {

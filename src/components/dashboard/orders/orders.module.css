@@ -62,7 +62,8 @@ td {
     /* width: 640px; */
   }
   .order__table {
-    width: 800px;
+    /* border: 2px solid red; */
+    width: 700px;
     overflow-x: auto;
   }
 }
