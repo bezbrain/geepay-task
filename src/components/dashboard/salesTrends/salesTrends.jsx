@@ -23,9 +23,7 @@ const SalesTrend = () => {
         </div>
       </header>
 
-      <div>
-        <BarChartComp />
-      </div>
+      <div className={styles.bar__chart__con}>{/* <BarChartComp /> */}</div>
     </div>
   );
 };

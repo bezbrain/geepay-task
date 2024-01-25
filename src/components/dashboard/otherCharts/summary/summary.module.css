@@ -43,7 +43,7 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 490px) {
   .summary__chart {
     grid-template-columns: 1fr;
   }

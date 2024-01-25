@@ -53,7 +53,7 @@ const BarChartComp = () => {
 
   return (
     <ResponsiveContainer
-      width={"100%"}
+      width={isWindow <= 660 ? 800 : "100%"}
       height={isWindow >= 1130 || isWindow <= 990 ? 270 : 500}
     >
       <BarChart data={data}>

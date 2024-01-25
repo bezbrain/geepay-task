@@ -1,5 +1,5 @@
 .sales__trends {
-  /* border: 2px solid red; */
+  border: 2px solid red;
   background-color: #fff;
   padding: 10px;
   border-radius: 10px;
@@ -8,10 +8,12 @@
 }
 
 .sales__trends > header {
+  border: 2px solid red;
   margin-block: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* width: 100%; */
 }
 .sales__trends > header > p {
   font-weight: 600;
@@ -42,7 +44,10 @@
 }
 @media screen and (max-width: 660px) {
   .sales__trends {
-    max-width: 100%;
+    /* max-width: 100%; */
+  }
+
+  .bar__chart__con {
     overflow-x: auto;
   }
 }

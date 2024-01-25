@@ -14,7 +14,7 @@ const Orders = () => {
 
   return (
     <div className={styles.orders__con}>
-      <header>
+      {/* <header>
         <p>Last Orders</p>
         <p>See All</p>
       </header>
@@ -37,7 +37,7 @@ const Orders = () => {
             );
           })}
         </tbody>
-      </table>
+      </table> */}
     </div>
   );
 };
