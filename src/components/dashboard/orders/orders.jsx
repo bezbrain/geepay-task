@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./orders.module.css";
 import OrderCard from "./orderCard/orderCard";
 import { orderData } from "../../../utils/data";
+import ScrollRight from "../../helpers/scrollRight/scrollRight";
 
 const Orders = () => {
   const statusColor = (status) => {
@@ -38,6 +39,8 @@ const Orders = () => {
           })}
         </tbody>
       </table>
+
+      <ScrollRight />
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { createGraph } from "../../../utils/graphs/salesTrend";
 import styles from "./sales.module.css";
 import { FaAngleDown } from "react-icons/fa6";
 import BarChartComp from "./barChart/barChart";
+import ScrollRight from "../../helpers/scrollRight/scrollRight";
 
 const SalesTrend = () => {
   const graphRef = useRef(null);
@@ -26,6 +27,8 @@ const SalesTrend = () => {
       <div className={styles.bar__chart__con}>
         <BarChartComp />
       </div>
+
+      <ScrollRight />
     </div>
   );
 };
