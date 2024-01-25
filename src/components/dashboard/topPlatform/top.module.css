@@ -21,7 +21,8 @@
 
 .platform__book,
 .platform__artisan,
-.platform__toy {
+.platform__toy,
+.platform__xtstore {
   height: 15px;
   width: 100%;
   background-color: #f5f6f7;
@@ -30,7 +31,8 @@
 }
 .platform__book > div,
 .platform__artisan > div,
-.platform__toy > div {
+.platform__toy > div,
+.platform__xtstore > div {
   border-radius: 20px;
   height: 100%;
 }
@@ -50,6 +52,7 @@
   width: 25%;
 }
 
-.top__platform > div > p {
-  font-weight: 600;
+.platform__xtstore > div {
+  background-color: red;
+  width: 20%;
 }

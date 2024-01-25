@@ -9,8 +9,10 @@ const TopPlatform = () => {
       return styles.platform__book;
     } else if (color === "offBlue") {
       return styles.platform__artisan;
-    } else {
+    } else if (color === "yellow") {
       return styles.platform__toy;
+    } else {
+      return styles.platform__xtstore;
     }
   };
 
@@ -28,8 +30,6 @@ const TopPlatform = () => {
             <PlatformCard key={id} {...each} color={platformColor(color)} />
           );
         })}
-
-        <p>XStore</p>
       </div>
     </div>
   );

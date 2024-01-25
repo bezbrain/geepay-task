@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from "react";
 import { createGraph } from "../../../utils/graphs/salesTrend";
 import styles from "./sales.module.css";
 import { FaAngleDown } from "react-icons/fa6";
-// import Chart from "chart.js/dist";
+import BarChartComp from "./barChart/barChart";
 
 const SalesTrend = () => {
   const graphRef = useRef(null);
 
   useEffect(() => {
-    createGraph(graphRef);
+    // createGraph(graphRef);
   }, []);
 
   return (
@@ -24,8 +24,12 @@ const SalesTrend = () => {
       </header>
 
       <div>
-        <canvas id="acquisitions"></canvas>
+        <BarChartComp />
       </div>
+
+      {/* <div>
+        <canvas id="acquisitions"></canvas>
+      </div> */}
     </div>
   );
 };

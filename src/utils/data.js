@@ -187,4 +187,11 @@ export const topPlatformData = [
     amount: "$1,200,000",
     rate: "+8%",
   },
+  {
+    id: 4,
+    color: "red",
+    name: "XStore",
+    amount: "$1,000,000",
+    rate: "+7%",
+  },
 ];
