@@ -59,9 +59,10 @@ td {
 @media screen and (max-width: 660px) {
   .orders__con {
     overflow-x: auto;
+    /* width: 640px; */
   }
   .order__table {
-    min-width: 850px;
+    width: 800px;
     overflow-x: auto;
   }
 }
