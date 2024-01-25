@@ -55,7 +55,7 @@
   .top__icons > img,
   .base__icons > img,
   .light__dark > img {
-    margin: 0 5px 15px 5px;
+    margin: 0 15px 15px 5px;
   }
   .light__dark {
     padding-block: 5px;
