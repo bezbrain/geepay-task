@@ -50,3 +50,9 @@ td {
   color: #ed544e;
   font-size: 14px;
 }
+
+@media screen and (max-width: 990px) {
+  .orders__con {
+    width: 100%;
+  }
+}

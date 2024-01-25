@@ -17,6 +17,7 @@
 }
 .top__platform > header > p:last-child {
   color: #34caa5;
+  cursor: pointer;
 }
 
 .platform__book,
@@ -55,4 +56,10 @@
 .platform__xtstore > div {
   background-color: red;
   width: 20%;
+}
+
+@media screen and (max-width: 990px) {
+  .top__platform {
+    width: 100%;
+  }
 }

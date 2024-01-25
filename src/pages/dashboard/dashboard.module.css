@@ -21,4 +21,7 @@
   .upper___section {
     flex-direction: column;
   }
+  .lower__section {
+    flex-direction: column;
+  }
 }
