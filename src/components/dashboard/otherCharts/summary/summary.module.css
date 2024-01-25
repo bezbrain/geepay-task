@@ -26,3 +26,15 @@
   padding: 3px 6px;
   border-radius: 20px;
 }
+@media screen and (max-width: 1130px) {
+  .summary__chart {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .summary__chart {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

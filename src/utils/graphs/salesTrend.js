@@ -50,22 +50,6 @@ export const createGraph = async (graphRef) => {
             stepSize: 10000, // Set the step size between ticks
             maxTicksLimit: 7, // Maximum number of ticks to display
             callback: function (value, i, val) {
-              // console.log(value, i, val);
-              // if (i === 0) {
-              //   return (value = 0);
-              // } else if (i === 1) {
-              //   return (value = "5.000");
-              // } else if (i === 2) {
-              //   return (value = "10.000");
-              // } else if (i === 3) {
-              //   return (value = "20.000");
-              // } else if (i === 4) {
-              //   return (value = "30.000");
-              // } else if (i === 5) {
-              //   return (value = "40.000");
-              // } else if (i === 6) {
-              //   return (value = "50.000");
-              // }
               return value === 0 ? "0" : value.toLocaleString(); // Format ticks as locale-specific strings
             },
           },

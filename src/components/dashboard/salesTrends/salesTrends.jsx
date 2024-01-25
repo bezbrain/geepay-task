@@ -26,10 +26,6 @@ const SalesTrend = () => {
       <div>
         <BarChartComp />
       </div>
-
-      {/* <div>
-        <canvas id="acquisitions"></canvas>
-      </div> */}
     </div>
   );
 };

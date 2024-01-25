@@ -4,7 +4,7 @@
   padding: 10px;
   border-radius: 10px;
   width: 60%;
-  height: fit-content;
+  /* height: fit-content; */
 }
 
 .sales__trends > header {
@@ -33,4 +33,10 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+  .sales__trends {
+    width: 100%;
+  }
 }
