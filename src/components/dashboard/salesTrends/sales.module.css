@@ -40,3 +40,9 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 660px) {
+  .sales__trends {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}

@@ -38,3 +38,13 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+@media screen and (max-width: 900px) {
+  .summary__chart {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 450px) {
+  .summary__chart {
+    grid-template-columns: 1fr;
+  }
+}
