@@ -2,11 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 body {
   color: #26282c;
   font-family: "Plus Jakarta Sans", sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
