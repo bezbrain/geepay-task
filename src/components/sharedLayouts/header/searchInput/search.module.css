@@ -13,6 +13,7 @@
 }
 
 .search__input > input {
+  display: block;
   height: 48px;
   width: 300px;
   border-radius: 20px;
@@ -41,15 +42,18 @@
   }
 }
 @media screen and (max-width: 650px) {
-  .search__input > input {
-    width: 48px;
+  .search__input {
+    border: 2px solid #777373;
+    padding: 5px;
     border-radius: 50%;
-    cursor: pointer;
   }
-  .search__input > input::placeholder {
-    color: transparent;
+  .search__input > input {
+    display: none;
   }
   .search__input > img {
+    position: static;
+    display: block;
+    transform: translateY(0%);
     cursor: pointer;
   }
 }
