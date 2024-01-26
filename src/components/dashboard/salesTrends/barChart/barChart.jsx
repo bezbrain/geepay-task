@@ -57,7 +57,7 @@ const BarChartComp = ({ isDark }) => {
       width={isWindow <= 660 ? 800 : "100%"}
       height={isWindow >= 1130 || isWindow <= 990 ? 270 : 500}
     >
-      <BarChart data={data}>
+      <BarChart data={data} style={{ overflowY: "hidden" }}>
         <CartesianGrid vertical={false} strokeDasharray="2 2" />
         <XAxis dataKey="name" />
         <YAxis
@@ -72,7 +72,6 @@ const BarChartComp = ({ isDark }) => {
         />
 
         <Bar
-          className={styles.each__bar}
           dataKey="count"
           shape={<RoundedBar />}
           fill={isDark ? "rgba(6, 252, 194, 0.1)" : "rgba(52, 202, 165, 0.10)"}
