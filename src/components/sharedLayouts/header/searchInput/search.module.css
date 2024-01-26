@@ -63,7 +63,17 @@
   .toggle__input {
     display: block;
     position: absolute;
-    top: 60px;
+    top: 65px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .toggle__input > input {
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
+    border: 1px solid #dadddd;
+    padding-left: 15px;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 510px) {

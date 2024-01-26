@@ -3,7 +3,7 @@ import { iconSearch } from "../../../../assets/icons/headersIcons";
 import styles from "./search.module.css";
 
 const SearchInput = ({ isDark }) => {
-  const [isSearch, setIsSearch] = useState(true);
+  const [isSearch, setIsSearch] = useState(false);
 
   return (
     <>
@@ -16,7 +16,7 @@ const SearchInput = ({ isDark }) => {
         <img
           src={iconSearch}
           alt="Search"
-          onClick={() => setIsSearch(setIsSearch(!isSearch))}
+          onClick={() => setIsSearch(!isSearch)}
         />
       </div>
       <div className={styles.toggle__input}>
