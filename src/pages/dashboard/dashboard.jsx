@@ -14,7 +14,7 @@ const Dashboard = ({ isDark }) => {
     >
       <section className={styles.upper___section}>
         <SalesTrend isDark={isDark} />
-        <SummaryChart />
+        <SummaryChart isDark={isDark} />
       </section>
 
       <section className={styles.lower__section}>

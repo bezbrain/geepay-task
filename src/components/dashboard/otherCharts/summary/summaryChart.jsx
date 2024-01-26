@@ -3,7 +3,7 @@ import SummaryChartsCard from "../summaryCard/summaryChartsCard";
 import styles from "./summary.module.css";
 import { chartData } from "../../../../utils/data";
 
-const SummaryChart = () => {
+const SummaryChart = ({ isDark }) => {
   const trends = (trend) => {
     if (trend === "trendUp") {
       return styles.trend__up;
@@ -17,7 +17,14 @@ const SummaryChart = () => {
       {chartData.map((each) => {
         const { id, trend } = each;
 
-        return <SummaryChartsCard key={id} {...each} trend={trends(trend)} />;
+        return (
+          <SummaryChartsCard
+            key={id}
+            {...each}
+            isDark={isDark}
+            trend={trends(trend)}
+          />
+        );
       })}
     </div>
   );

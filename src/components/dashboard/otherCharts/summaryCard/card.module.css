@@ -1,7 +1,14 @@
 .single__chart__card {
-  background-color: #fff;
   padding: 10px;
   border-radius: 10px;
+}
+
+.card__dark {
+  background-color: #1d1d1d;
+}
+
+.card__light {
+  background-color: #fff;
 }
 
 .single__chart__card > header {
@@ -32,6 +39,13 @@
   margin-top: 10px;
   font-weight: 500;
   color: #898989;
+}
+
+.value__dark {
+  color: #f1f1f2;
+}
+.value__light {
+  color: #000;
 }
 
 .single__chart__card > h3 {
