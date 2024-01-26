@@ -36,6 +36,10 @@
   transform: translateY(-50%);
 }
 
+.toggle__input {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .search__input > input {
     width: 100%;
@@ -56,14 +60,19 @@
     transform: translateY(0%);
     cursor: pointer;
   }
+  .toggle__input {
+    display: block;
+    position: absolute;
+    top: 60px;
+  }
 }
 @media screen and (max-width: 510px) {
   .search__input > input {
-    width: 30px;
-    height: 40px;
+    /* width: 30px;
+    height: 40px; */
   }
   .search__input > img {
-    right: 50%;
-    transform: translate(-20%, -50%);
+    /* right: 50%;
+    transform: translate(-20%, -50%); */
   }
 }
