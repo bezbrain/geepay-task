@@ -3,11 +3,19 @@
   position: relative;
 }
 
+.input__dark {
+  background-color: #000;
+  color: #fff;
+}
+.input__light {
+  background-color: #fff;
+  color: #000;
+}
+
 .search__input > input {
   height: 48px;
   width: 300px;
   border-radius: 20px;
-  background-color: #fff;
   border: 1px solid #dadddd;
   padding-left: 40px;
   font-size: 1rem;
@@ -15,6 +23,7 @@
 .search__input > input::placeholder {
   color: #a3a3a3;
 }
+
 .search__input > input:focus {
   outline: 1px solid #dadddd;
 }

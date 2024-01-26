@@ -9,11 +9,17 @@
   cursor: pointer;
 }
 
-.profile__name > h4 {
+.calendar__dark {
+  color: #fff;
+}
+.calendar__light {
   color: #26282c;
 }
 
-.profile__name > p {
+.profile__name > .dark__name {
+  color: #fff;
+}
+.profile__name > .light__name {
   color: #787486;
 }
 

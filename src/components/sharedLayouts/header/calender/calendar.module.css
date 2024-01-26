@@ -4,9 +4,16 @@
   gap: 10px;
 }
 
-.calendar > img {
-  cursor: pointer;
+.calendar__dark {
+  color: #fff;
 }
+.calendar__light {
+  color: #000;
+}
+
+/* .calendar > img {
+  cursor: pointer;
+} */
 
 @media screen and (max-width: 1130px) {
   .calendar > p {

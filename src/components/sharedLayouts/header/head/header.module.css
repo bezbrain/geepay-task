@@ -6,7 +6,20 @@
   background-color: #f5f6f7;
   padding: 1rem 20px;
   gap: 20px;
-  border-bottom: 2px solid #ebecf2;
+  /* border-bottom: 2px solid #ebecf2; */
+}
+
+.light__mode {
+  background-color: #ebecf2;
+}
+.dark__mode {
+  background-color: #000;
+}
+.calendar__dark {
+  color: #fff;
+}
+.calendar__light {
+  color: #000;
 }
 
 .left__hand__side {
@@ -20,11 +33,17 @@
   width: 40px;
   height: 40px;
   margin-right: 20px;
-  border: 2px solid #ebecf2;
+  /* border: 2px solid #ebecf2; */
 }
 
 .left__hand__side > h2 {
   margin-left: 20px;
+}
+.dashboard__dark {
+  color: #fff;
+}
+.dashboard__light {
+  color: #000;
 }
 
 .right__hand__side {

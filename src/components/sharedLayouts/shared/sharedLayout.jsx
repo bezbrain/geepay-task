@@ -7,7 +7,7 @@ import styles from "./shared.module.css";
 const SharedLayout = ({ isDark }) => {
   return (
     <section>
-      <Header />
+      <Header isDark={isDark} />
       <div className={styles.main__page}>
         <SideBar isDark={isDark} />
         <Outlet />
