@@ -27,9 +27,30 @@
   display: block;
 }
 
+.toggle__profile__name {
+  display: none;
+}
+
 @media screen and (max-width: 950px) {
+  .profile__details {
+    position: relative;
+  }
   .profile__name {
     display: none;
+  }
+  .toggle__profile__name {
+    display: block;
+    border: 2px solid rgb(108, 107, 107);
+    border-radius: 10px;
+    position: fixed;
+    right: 1rem;
+    top: 70px;
+    padding: 20px 10px;
+    color: #fff;
+    background-color: #000;
+  }
+  .toggle__profile__name > h4 {
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 520px) {
