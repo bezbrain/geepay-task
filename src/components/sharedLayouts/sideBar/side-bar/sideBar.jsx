@@ -6,9 +6,15 @@ import { frame, moon } from "../../../../assets/icons/sideBarIcons";
 const SideBar = ({ isDark }) => {
   return (
     <section
-      className={`${isDark ? styles.dark__side__bar : styles.light__side__Bar}`}
+      className={`${isDark ? styles.dark__mode : styles.light__mode} ${
+        styles.sidebar__section
+      }`}
     >
-      <div className={styles.side__bar}>
+      <div
+        className={`${isDark ? styles.dark__mode : styles.light__mode} ${
+          styles.side__bar
+        }`}
+      >
         <div className={styles.top__icons}>
           {topIcons.map((each) => {
             const { id, icon, name } = each;

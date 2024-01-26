@@ -2,10 +2,10 @@
   border: 2px solid #ebecf2;
   min-height: 90vh;
 }
-.light__side__Bar {
+.light__mode {
   background-color: #eff0f3;
 }
-.dark__side__bar {
+.dark__mode {
   background-color: #000;
 }
 
@@ -17,7 +17,7 @@
   justify-content: space-between;
   gap: 50px;
   padding-inline: 20px;
-  background-color: #eff0f3;
+  /* background-color: #eff0f3; */
 }
 
 .top__icons {

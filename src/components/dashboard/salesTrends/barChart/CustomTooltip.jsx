@@ -6,7 +6,6 @@ const CustomTooltip = ({ active, payload }) => {
     const data = payload[0].payload;
     return (
       <div className={styles.customTooltip}>
-        {/* <p>{`Month: ${data.name}`}</p> */}
         <p>{`$${data.count}`}</p>
       </div>
     );
