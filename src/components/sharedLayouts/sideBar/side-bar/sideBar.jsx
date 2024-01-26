@@ -11,9 +11,9 @@ const SideBar = ({ isDark }) => {
       }`}
     >
       <div
-        className={`${isDark ? styles.dark__mode : styles.light__mode} ${
-          styles.side__bar
-        }`}
+        className={`${
+          isDark ? styles.dark__mode__side__bar : styles.light__mode__side__bar
+        } ${styles.side__bar}`}
       >
         <div className={styles.top__icons}>
           {topIcons.map((each) => {
