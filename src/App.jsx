@@ -4,13 +4,16 @@ import Dashboard from "./pages/dashboard/dashboard";
 import SharedLayout from "./components/sharedLayouts/shared/sharedLayout";
 
 const App = () => {
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
 
   return (
     <main>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<SharedLayout isDark={isDark} />}>
+          <Route
+            path="/"
+            element={<SharedLayout isDark={isDark} setIsDark={setIsDark} />}
+          >
             <Route index element={<Dashboard isDark={isDark} />} />
           </Route>
         </Routes>

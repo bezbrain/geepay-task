@@ -43,12 +43,13 @@
 }
 .light__dark {
   /* border: 2px solid red; */
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-radius: 20px;
   padding-block: 5px;
 }
 .light__dark > img {
   margin-inline: auto;
+  cursor: pointer;
 }
 .light__dark > img:first-child {
   margin-block: 5px 20px;

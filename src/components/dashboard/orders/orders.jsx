@@ -14,38 +14,39 @@ const Orders = ({ isDark }) => {
   };
 
   return (
-    <div
-      className={`${
-        isDark ? styles.order__con__dark : styles.order__con__light
-      } ${styles.orders__con}`}
-    >
-      <header>
-        <p>Last Orders</p>
-        <p>See All</p>
-      </header>
+    <>
+      <div
+        className={`${
+          isDark ? styles.order__con__dark : styles.order__con__light
+        } ${styles.orders__con}`}
+      >
+        <header>
+          <p>Last Orders</p>
+          <p>See All</p>
+        </header>
 
-      <table className={styles.order__table}>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Date</th>
-            <th>Amount</th>
-            <th>Status</th>
-            <th>Invoice</th>
-          </tr>
-        </thead>
-        <tbody>
-          {orderData.map((each) => {
-            const { id, status } = each;
-            return (
-              <OrderCard key={id} {...each} statusCol={statusColor(status)} />
-            );
-          })}
-        </tbody>
-      </table>
-
+        <table className={styles.order__table}>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Invoice</th>
+            </tr>
+          </thead>
+          <tbody>
+            {orderData.map((each) => {
+              const { id, status } = each;
+              return (
+                <OrderCard key={id} {...each} statusCol={statusColor(status)} />
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
       <ScrollRight isDark={isDark} />
-    </div>
+    </>
   );
 };
 

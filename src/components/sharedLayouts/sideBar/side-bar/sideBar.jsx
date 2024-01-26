@@ -3,7 +3,7 @@ import styles from "./sideBar.module.css";
 import { baseIcon, topIcons } from "../../../../utils/data";
 import { frame, moon } from "../../../../assets/icons/sideBarIcons";
 
-const SideBar = ({ isDark }) => {
+const SideBar = ({ isDark, setIsDark }) => {
   return (
     <section
       className={`${isDark ? styles.dark__mode : styles.light__mode} ${
@@ -21,9 +21,13 @@ const SideBar = ({ isDark }) => {
             return <img src={icon} alt={name} key={id} />;
           })}
 
-          <div className={styles.light__dark}>
-            <img src={frame} alt="frame" />
-            <img src={moon} alt="moon" />
+          <div
+            className={`${isDark ? styles.dark__mode : styles.light__mode} ${
+              styles.light__dark
+            }`}
+          >
+            <img src={frame} alt="frame" onClick={() => setIsDark(true)} />
+            <img src={moon} alt="moon" onClick={() => setIsDark(false)} />
           </div>
         </div>
 

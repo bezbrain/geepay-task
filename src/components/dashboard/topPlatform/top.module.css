@@ -76,3 +76,8 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 660px) {
+  .top__platform {
+    margin-block: 20px 40px;
+  }
+}
