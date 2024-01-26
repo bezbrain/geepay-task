@@ -1,9 +1,25 @@
 .orders__con {
   /* border: 2px solid red; */
-  background-color: #fff;
   padding: 20px 10px;
   border-radius: 10px;
   width: 60%;
+}
+
+.order__con__dark {
+  background-color: #000;
+}
+.order__con__light {
+  background-color: #fff;
+}
+.order__con__dark th,
+.order__con__dark td {
+  color: #f1f1f1;
+  border-bottom: 1px solid #38383b;
+}
+.order__con__light th,
+.order__con__light td {
+  color: #000;
+  border-bottom: 1px solid #ebecf2;
 }
 
 .orders__con > header {
@@ -24,7 +40,6 @@
 
 th,
 td {
-  border-bottom: 1px solid #ebecf2;
 }
 
 .order__table thead tr th {

@@ -4,7 +4,7 @@ import OrderCard from "./orderCard/orderCard";
 import { orderData } from "../../../utils/data";
 import ScrollRight from "../../helpers/scrollRight/scrollRight";
 
-const Orders = () => {
+const Orders = ({ isDark }) => {
   const statusColor = (status) => {
     if (status === "Paid") {
       return styles.status__paid;
@@ -14,7 +14,11 @@ const Orders = () => {
   };
 
   return (
-    <div className={styles.orders__con}>
+    <div
+      className={`${
+        isDark ? styles.order__con__dark : styles.order__con__light
+      } ${styles.orders__con}`}
+    >
       <header>
         <p>Last Orders</p>
         <p>See All</p>
@@ -40,7 +44,7 @@ const Orders = () => {
         </tbody>
       </table>
 
-      <ScrollRight />
+      <ScrollRight isDark={isDark} />
     </div>
   );
 };

@@ -33,7 +33,7 @@ const SalesTrend = ({ isDark }) => {
         <BarChartComp isDark={isDark} />
       </div>
 
-      <ScrollRight />
+      <ScrollRight isDark={isDark} />
     </div>
   );
 };
