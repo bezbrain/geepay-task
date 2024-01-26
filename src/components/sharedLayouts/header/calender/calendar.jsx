@@ -8,7 +8,9 @@ const Calendar = ({ isDark }) => {
     <div className={styles.calendar}>
       {/* <img src={solarCalendar} alt="Calendar" title="November 15, 2023" /> */}
       <LuCalendarDays
-        className={`${isDark ? styles.calendar__dark : styles.calendar__light}`}
+        className={`${
+          isDark ? styles.calendar__dark : styles.calendar__light
+        } ${styles.calendar__icon}`}
       />
       <p
         className={`${isDark ? styles.calendar__dark : styles.calendar__light}`}

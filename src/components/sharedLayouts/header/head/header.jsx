@@ -33,7 +33,7 @@ const Header = ({ isDark }) => {
           <IoNotificationsOutline
             className={`${
               isDark ? styles.calendar__dark : styles.calendar__light
-            }`}
+            } ${styles.bell__icon}`}
           />
         </div>
         <Profile isDark={isDark} />

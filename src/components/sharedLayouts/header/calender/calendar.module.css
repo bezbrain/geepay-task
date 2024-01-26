@@ -6,14 +6,17 @@
 
 .calendar__dark {
   color: #f1f1f1;
+  cursor: pointer;
 }
 .calendar__light {
   color: #000;
+  cursor: pointer;
 }
 
-/* .calendar > img {
-  cursor: pointer;
-} */
+.calendar__icon {
+  color: #b1aeae;
+  font-size: 25px;
+}
 
 @media screen and (max-width: 1130px) {
   .calendar > p {

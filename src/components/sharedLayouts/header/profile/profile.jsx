@@ -15,8 +15,11 @@ const Profile = ({ isDark }) => {
           Justin@gmail.com
         </p>
       </div>
+
       <FaAngleDown
-        className={`${isDark ? styles.calendar__dark : styles.calendar__light}`}
+        className={`${
+          isDark ? styles.calendar__dark : styles.calendar__light
+        } ${styles.profile__icon}`}
       />
     </div>
   );
