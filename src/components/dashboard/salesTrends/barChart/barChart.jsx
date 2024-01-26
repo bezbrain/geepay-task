@@ -52,6 +52,8 @@ const BarChartComp = ({ isDark }) => {
     };
   }, [isWindow]);
 
+  const [hoveredBarIndex, setHoveredBarIndex] = useState(null);
+
   return (
     <ResponsiveContainer
       width={isWindow <= 660 ? 800 : "100%"}
@@ -73,9 +75,9 @@ const BarChartComp = ({ isDark }) => {
 
         <Bar
           dataKey="count"
-          shape={<RoundedBar />}
-          fill={isDark ? "rgba(8, 249, 193, 0.1)" : "rgba(52, 202, 165, 0.10)"}
           barSize={30}
+          radius={[20, 20, 0, 0]}
+          fill={isDark ? "rgba(8, 249, 193, 0.1)" : "rgba(52, 202, 165, 0.10)"}
         />
       </BarChart>
     </ResponsiveContainer>
