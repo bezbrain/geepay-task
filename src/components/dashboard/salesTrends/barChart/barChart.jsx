@@ -74,7 +74,7 @@ const BarChartComp = ({ isDark }) => {
         <Bar
           dataKey="count"
           shape={<RoundedBar />}
-          fill={isDark ? "rgba(6, 252, 194, 0.1)" : "rgba(52, 202, 165, 0.10)"}
+          fill={isDark ? "rgba(8, 249, 193, 0.1)" : "rgba(52, 202, 165, 0.10)"}
           barSize={30}
         />
       </BarChart>
