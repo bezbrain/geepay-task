@@ -18,6 +18,11 @@
   font-size: 25px;
 }
 
+@media screen and (max-width: 1300px) {
+  .calendar > p span {
+    display: none;
+  }
+}
 @media screen and (max-width: 1130px) {
   .calendar > p {
     display: none;

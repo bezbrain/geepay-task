@@ -20,7 +20,13 @@ const SearchInput = ({ isDark }) => {
         />
       </div>
       <div className={styles.toggle__input}>
-        {isSearch && <input type="text" placeholder="Search..." />}
+        {isSearch && (
+          <input
+            type="text"
+            placeholder="Search..."
+            className={`${isDark ? styles.input__dark : styles.input__light}`}
+          />
+        )}
       </div>
     </>
   );

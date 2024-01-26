@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { solarCalendar } from "../../../../assets/icons/headersIcons";
 import styles from "./calendar.module.css";
 import { LuCalendarDays } from "react-icons/lu";
@@ -13,9 +13,11 @@ const Calendar = ({ isDark }) => {
         } ${styles.calendar__icon}`}
       />
       <p
-        className={`${isDark ? styles.calendar__dark : styles.calendar__light}`}
+        className={`${
+          isDark ? styles.calendar__dark : styles.calendar__light
+        } `}
       >
-        November 15, 2023
+        Nov<span>ember</span> 15, 2023
       </p>
     </div>
   );
