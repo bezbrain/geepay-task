@@ -4,7 +4,7 @@ import Dashboard from "./pages/dashboard/dashboard";
 import SharedLayout from "./components/sharedLayouts/shared/sharedLayout";
 
 const App = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   return (
     <main>

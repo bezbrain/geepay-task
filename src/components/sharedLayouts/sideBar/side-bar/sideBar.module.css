@@ -6,22 +6,20 @@
   background-color: #eff0f3;
 }
 .dark__mode {
-  border: 1px solid #ebecf2;
+  border: 1px solid #323232;
   background-color: #000;
 }
 
 .side__bar {
-  /* border: 2px solid #ebecf2; */
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
   padding-inline: 20px;
-  /* background-color: #eff0f3; */
 }
 .dark__mode__side__bar {
-  border-bottom: 1px solid #ebecf2;
+  border-bottom: 1px solid #323232;
   background-color: #000;
 }
 .light__mode__side__bar {
