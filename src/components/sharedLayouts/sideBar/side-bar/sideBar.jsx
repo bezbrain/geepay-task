@@ -26,8 +26,8 @@ const SideBar = ({ isDark, setIsDark }) => {
               styles.light__dark
             }`}
           >
-            <img src={frame} alt="frame" onClick={() => setIsDark(true)} />
-            <img src={moon} alt="moon" onClick={() => setIsDark(false)} />
+            <img src={frame} alt="frame" onClick={() => setIsDark(!isDark)} />
+            <img src={moon} alt="moon" onClick={() => setIsDark(!isDark)} />
           </div>
         </div>
 
