@@ -19,7 +19,7 @@ const Dashboard = ({ isDark }) => {
 
       <section className={styles.lower__section}>
         <Orders isDark={isDark} />
-        <TopPlatform />
+        <TopPlatform isDark={isDark} />
       </section>
     </main>
   );

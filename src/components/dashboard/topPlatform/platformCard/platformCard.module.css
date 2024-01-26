@@ -10,3 +10,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+.dark__color {
+  color: #f1f1f1;
+}
+.light__color {
+  color: #000;
+}

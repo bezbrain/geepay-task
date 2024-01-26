@@ -3,7 +3,7 @@ import styles from "./top.module.css";
 import PlatformCard from "./platformCard/platformCard";
 import { topPlatformData } from "../../../utils/data";
 
-const TopPlatform = () => {
+const TopPlatform = ({ isDark }) => {
   const platformColor = (color) => {
     if (color === "purple") {
       return styles.platform__book;
@@ -17,9 +17,15 @@ const TopPlatform = () => {
   };
 
   return (
-    <div className={styles.top__platform}>
+    <div
+      className={`${isDark ? styles.platform__dark : styles.platform__light} ${
+        styles.top__platform
+      }`}
+    >
       <header>
-        <p>Top Platform</p>
+        <p className={`${isDark ? styles.dark__color : styles.light__color}`}>
+          Top Platform
+        </p>
         <p>See All</p>
       </header>
 
@@ -27,7 +33,12 @@ const TopPlatform = () => {
         {topPlatformData.map((each) => {
           const { id, color } = each;
           return (
-            <PlatformCard key={id} {...each} color={platformColor(color)} />
+            <PlatformCard
+              key={id}
+              {...each}
+              color={platformColor(color)}
+              isDark={isDark}
+            />
           );
         })}
       </div>

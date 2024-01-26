@@ -3,6 +3,19 @@
   padding: 20px 10px;
   border-radius: 10px;
   height: fit-content;
+}
+
+.dark__color {
+  color: #f1f1f1;
+}
+.light__color {
+  color: #000;
+}
+
+.platform__dark {
+  background-color: #1d1d1d;
+}
+.platform__light {
   background-color: #fff;
 }
 
