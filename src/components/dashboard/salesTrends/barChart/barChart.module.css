@@ -1,1 +1,14 @@
+.bar {
+  fill: rgba(52, 202, 165, 0.1); /* Default fill color */
+  transition: fill 0.3s; /* Optional: Add transition for a smooth effect */
+}
 
+.bar:hover {
+  fill: linear-gradient(180deg, #34caa5 0%, rgba(52, 202, 165, 0) 100%);
+  /* Apply the linear gradient on hover */
+}
+
+.hovered {
+  fill: linear-gradient(180deg, #34caa5 0%, rgba(52, 202, 165, 0) 100%);
+  /* Apply the linear gradient for the hovered state */
+}

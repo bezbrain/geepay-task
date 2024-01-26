@@ -2,6 +2,12 @@
   border: 2px solid #ebecf2;
   min-height: 90vh;
 }
+.light__side__Bar {
+  background-color: #eff0f3;
+}
+.dark__side__bar {
+  background-color: #000;
+}
 
 .side__bar {
   /* border: 2px solid #ebecf2; */
@@ -10,8 +16,8 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
-  background-color: #eff0f3;
   padding-inline: 20px;
+  background-color: #eff0f3;
 }
 
 .top__icons {

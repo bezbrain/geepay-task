@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/dashboard/dashboard";
 import SharedLayout from "./components/sharedLayouts/shared/sharedLayout";
 
 const App = () => {
+  const [isDark, setIsDark] = useState(true);
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<SharedLayout />}>
-          <Route index element={<Dashboard />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <main>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SharedLayout isDark={isDark} />}>
+            <Route index element={<Dashboard />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </main>
   );
 };
 

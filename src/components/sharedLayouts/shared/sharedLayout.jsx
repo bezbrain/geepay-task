@@ -4,12 +4,12 @@ import Header from "../header/head/header";
 import SideBar from "../sideBar/side-bar/sideBar";
 import styles from "./shared.module.css";
 
-const SharedLayout = () => {
+const SharedLayout = ({ isDark }) => {
   return (
     <section>
       <Header />
       <div className={styles.main__page}>
-        <SideBar />
+        <SideBar isDark={isDark} />
         <Outlet />
       </div>
     </section>

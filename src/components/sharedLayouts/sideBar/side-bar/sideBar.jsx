@@ -3,9 +3,11 @@ import styles from "./sideBar.module.css";
 import { baseIcon, topIcons } from "../../../../utils/data";
 import { frame, moon } from "../../../../assets/icons/sideBarIcons";
 
-const SideBar = () => {
+const SideBar = ({ isDark }) => {
   return (
-    <section className={styles.sidebar__section}>
+    <section
+      className={`${isDark ? styles.dark__side__bar : styles.light__side__Bar}`}
+    >
       <div className={styles.side__bar}>
         <div className={styles.top__icons}>
           {topIcons.map((each) => {

@@ -17,10 +17,15 @@ const SalesTrend = () => {
       <header>
         <p>Sales Trends</p>
         <div>
-          <span>Short by:</span>
-          <button>
+          <span>Sort by:</span>
+          <select>
+            <option value="">Weekly</option>
+            <option value="">Monthly</option>
+            <option value="">Yearly</option>
+          </select>
+          {/* <button>
             Weekly <FaAngleDown className={styles.weekly__icon} />
-          </button>
+          </button> */}
         </div>
       </header>
 

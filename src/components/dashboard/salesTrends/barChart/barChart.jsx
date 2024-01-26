@@ -9,6 +9,7 @@ import {
   CartesianGrid,
   Tooltip,
 } from "recharts";
+import RoundedBar from "./roundBar";
 
 const BarChartComp = () => {
   const data = [
@@ -67,10 +68,24 @@ const BarChartComp = () => {
         <Tooltip />
         <Bar
           dataKey="count"
+          shape={<RoundedBar />}
+          fill="rgba(52, 202, 165, 0.10)"
+          barSize={30}
+          className={styles.bar} // Apply the styles for normal state
+          onMouseEnter={(e) => {
+            e.target?.classList.add(styles.hovered); // Apply the styles for hover state
+          }}
+          onMouseLeave={(e) => {
+            e.target?.classList.remove(styles.hovered); // Revert to the styles for normal state on hover out
+          }}
+        />
+        {/* <Bar
+          dataKey="count"
+          shape={<RoundedBar />}
           fill="rgba(52, 202, 165, 0.10)"
           barSize={30}
           //   radius={20}
-        />
+        /> */}
       </BarChart>
     </ResponsiveContainer>
   );
