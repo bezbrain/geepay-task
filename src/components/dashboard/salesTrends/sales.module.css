@@ -44,6 +44,7 @@
   border-radius: 20px;
   margin-left: 10px;
   background-color: #fcf8f8;
+  cursor: pointer;
 }
 
 .bar__chart__con {

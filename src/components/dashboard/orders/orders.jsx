@@ -21,7 +21,9 @@ const Orders = ({ isDark }) => {
         } ${styles.orders__con}`}
       >
         <header>
-          <p>Last Orders</p>
+          <p className={`${isDark ? styles.order__dark : styles.order__light}`}>
+            Last Orders
+          </p>
           <p>See All</p>
         </header>
 

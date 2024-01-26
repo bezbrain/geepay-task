@@ -78,6 +78,7 @@ const BarChartComp = ({ isDark }) => {
           barSize={30}
           radius={[20, 20, 0, 0]}
           fill={isDark ? "rgba(8, 249, 193, 0.1)" : "rgba(52, 202, 165, 0.10)"}
+          isAnimationActive={false}
         />
       </BarChart>
     </ResponsiveContainer>
