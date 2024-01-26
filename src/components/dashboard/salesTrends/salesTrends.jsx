@@ -5,16 +5,16 @@ import { FaAngleDown } from "react-icons/fa6";
 import BarChartComp from "./barChart/barChart";
 import ScrollRight from "../../helpers/scrollRight/scrollRight";
 
-const SalesTrend = () => {
-  const graphRef = useRef(null);
-
-  useEffect(() => {
-    // createGraph(graphRef);
-  }, []);
-
+const SalesTrend = ({ isDark }) => {
   return (
-    <div className={styles.sales__trends}>
-      <header>
+    <div
+      className={`${
+        isDark ? styles.dashboard__dark : styles.dashboard__light
+      } ${styles.sales__trends}`}
+    >
+      <header
+        className={`${isDark ? styles.dark__color : styles.light__color}`}
+      >
         <p>Sales Trends</p>
         <div>
           <span>Sort by:</span>
@@ -30,7 +30,7 @@ const SalesTrend = () => {
       </header>
 
       <div className={styles.bar__chart__con}>
-        <BarChartComp />
+        <BarChartComp isDark={isDark} />
       </div>
 
       <ScrollRight />

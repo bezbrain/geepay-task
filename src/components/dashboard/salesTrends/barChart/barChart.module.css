@@ -1,22 +1,17 @@
-/* .bar {
-  fill: rgba(52, 202, 165, 0.1);
-  transition: fill 0.3s; 
-}
-
-.bar:hover {
-  fill: linear-gradient(180deg, #34caa5 0%, rgba(52, 202, 165, 0) 100%);
-}
-
-.hovered {
-  fill: linear-gradient(180deg, #34caa5 0%, rgba(52, 202, 165, 0) 100%);
-} */
-
 .customTooltip {
   position: relative;
-  background-color: #000;
-  color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.customTooltip__dark {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.customTooltip__light {
+  background-color: #000;
+  color: #fff;
 }
 
 .customTooltip::before {
@@ -29,6 +24,15 @@
   left: 0px;
   right: 0;
   margin: 0 auto;
-  background-color: #000;
   transform: rotate(45deg);
+}
+
+.customTooltip__dark::before {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.customTooltip__light::before {
+  background-color: #000;
+  color: #fff;
 }

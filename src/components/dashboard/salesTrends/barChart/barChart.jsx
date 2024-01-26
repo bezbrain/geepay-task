@@ -12,7 +12,7 @@ import {
 import RoundedBar from "./roundBar";
 import CustomTooltip from "./CustomTooltip";
 
-const BarChartComp = () => {
+const BarChartComp = ({ isDark }) => {
   const data = [
     { name: "Jan", count: 6000 },
     { name: "Feb", count: 21000 },
@@ -43,7 +43,6 @@ const BarChartComp = () => {
   };
 
   useEffect(() => {
-    // console.log(isWindow);
     // Add resize event listener when the component mounts
     window.addEventListener("resize", handleResize);
 
@@ -67,13 +66,16 @@ const BarChartComp = () => {
           tickFormatter={formatYAxisTick}
         />
 
-        <Tooltip content={<CustomTooltip />} cursor={{ fill: "transparent" }} />
+        <Tooltip
+          content={<CustomTooltip isDark={isDark} />}
+          cursor={{ fill: "transparent" }}
+        />
 
         <Bar
           className={styles.each__bar}
           dataKey="count"
           shape={<RoundedBar />}
-          fill="rgba(52, 202, 165, 0.10)"
+          fill={isDark ? "rgba(6, 252, 194, 0.1)" : "rgba(52, 202, 165, 0.10)"}
           barSize={30}
         />
       </BarChart>

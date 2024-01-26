@@ -10,14 +10,14 @@
 }
 
 .calendar__dark {
-  color: #fff;
+  color: #f1f1f1;
 }
 .calendar__light {
   color: #26282c;
 }
 
 .profile__name > .dark__name {
-  color: #fff;
+  color: #f1f1f1;
 }
 .profile__name > .light__name {
   color: #787486;

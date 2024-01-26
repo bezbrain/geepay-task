@@ -5,11 +5,15 @@ import SummaryChart from "../../components/dashboard/otherCharts/summary/summary
 import Orders from "../../components/dashboard/orders/orders";
 import TopPlatform from "../../components/dashboard/topPlatform/topPlatform";
 
-const Dashboard = () => {
+const Dashboard = ({ isDark }) => {
   return (
-    <main className={styles.dashboard}>
+    <main
+      className={`${
+        isDark ? styles.dashboard__dark : styles.dashboard__light
+      } ${styles.dashboard}`}
+    >
       <section className={styles.upper___section}>
-        <SalesTrend />
+        <SalesTrend isDark={isDark} />
         <SummaryChart />
       </section>
 

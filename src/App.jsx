@@ -11,7 +11,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<SharedLayout isDark={isDark} />}>
-            <Route index element={<Dashboard />} />
+            <Route index element={<Dashboard isDark={isDark} />} />
           </Route>
         </Routes>
       </BrowserRouter>
