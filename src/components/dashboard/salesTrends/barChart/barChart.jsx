@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import styles from "./barChart.module.css";
 import {
   BarChart,
   Bar,
@@ -10,7 +9,6 @@ import {
   Tooltip,
   Cell,
 } from "recharts";
-import RoundedBar from "./roundBar";
 import CustomTooltip from "./CustomTooltip";
 import CustomYAxisTick from "./customYAxisTicks";
 
@@ -51,13 +49,9 @@ const BarChartComp = ({ isDark }) => {
   const [hoveredBarIndex, setHoveredBarIndex] = useState(null);
 
   const handleBarMouseOver = (data, index) => {
-    // console.log(data);
-    // console.log(index);
     setHoveredBarIndex(index);
   };
-  const handleBarMouseLeave = (data, index) => {
-    // console.log(data);
-    // console.log(index);
+  const handleBarMouseLeave = () => {
     setHoveredBarIndex(null);
   };
 
@@ -72,15 +66,12 @@ const BarChartComp = ({ isDark }) => {
         <YAxis
           tick={<CustomYAxisTick />}
           ticks={yAxisTicks}
-          // domain={[0, "dataMax"]}
           domain={[0, 50000]}
-          // tickFormatter={formatYAxisTick}
           tickLine={false}
           axisLine={false}
         />
         <Tooltip
           content={<CustomTooltip isDark={isDark} />}
-          // position={{ y: 0 }}
           cursor={{ fill: "transparent" }}
         />
         <defs>
@@ -111,12 +102,6 @@ const BarChartComp = ({ isDark }) => {
           ))}
         </Bar>
         ;
-        {/* <Bar
-          dataKey="count"
-          barSize={30}
-          radius={[20, 20, 0, 0]}
-          fill={isDark ? "rgba(8, 249, 193, 0.1)" : "rgba(52, 202, 165, 0.10)"}
-        /> */}
       </BarChart>
     </ResponsiveContainer>
   );

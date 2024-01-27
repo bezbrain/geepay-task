@@ -1,7 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { createGraph } from "../../../utils/graphs/salesTrend";
+import React from "react";
 import styles from "./sales.module.css";
-import { FaAngleDown } from "react-icons/fa6";
 import BarChartComp from "./barChart/barChart";
 import ScrollRight from "../../helpers/scrollRight/scrollRight";
 
@@ -23,9 +21,6 @@ const SalesTrend = ({ isDark }) => {
             <option value="">Monthly</option>
             <option value="">Yearly</option>
           </select>
-          {/* <button>
-            Weekly <FaAngleDown className={styles.weekly__icon} />
-          </button> */}
         </div>
       </header>
 

@@ -1,6 +1,4 @@
 .sales__trends {
-  /* overflow: hidden !important; */
-  /* border: 2px solid red; */
   padding: 10px;
   border-radius: 10px;
   width: 60%;
@@ -14,12 +12,10 @@
 }
 
 .sales__trends > header {
-  /* border: 2px solid red; */
   margin-block: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
 }
 .sales__trends > header > p {
   font-weight: 600;
@@ -47,22 +43,12 @@
   cursor: pointer;
 }
 
-.bar__chart__con {
-  /* border: 2px solid red; */
-  /* overflow-y: hidden; */
-  /* overflow: hidden !important; */
-}
-
 @media screen and (max-width: 990px) {
   .sales__trends {
     width: 100%;
   }
 }
 @media screen and (max-width: 660px) {
-  .sales__trends {
-    /* max-width: 100%; */
-  }
-
   .bar__chart__con {
     overflow-x: auto;
   }

@@ -27,10 +27,6 @@
   background-color: #eff0f3;
 }
 
-.top__icons {
-  /* border: 2px solid red; */
-}
-
 .top__icons > img,
 .base__icons > img,
 .light__dark > img {
@@ -42,8 +38,6 @@
   margin: 5px 20px 20px 5px;
 }
 .light__dark {
-  /* border: 2px solid red; */
-  /* background-color: #ffffff; */
   border-radius: 20px;
   padding-block: 5px;
 }
@@ -56,10 +50,6 @@
 }
 .light__dark > img:last-child {
   margin-bottom: 5px;
-}
-
-.base__icons {
-  /* border: 2px solid red; */
 }
 
 @media screen and (max-width: 510px) {
@@ -77,7 +67,4 @@
   .light__dark > img:first-child {
     margin-block: 5px 10px;
   }
-}
-@media screen and (max-width: 420px) {
-  /*  */
 }

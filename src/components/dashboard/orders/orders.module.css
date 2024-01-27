@@ -1,5 +1,4 @@
 .orders__con {
-  /* border: 2px solid red; */
   padding: 20px 10px;
   border-radius: 10px;
   width: 60%;
@@ -41,18 +40,13 @@
 }
 
 .order__table {
-  /* border: 2px solid red; */
   width: 100%;
 }
 
 .order__table thead tr th {
-  /* border-bottom: 1px solid #000; */
   text-align: left;
   color: #898989;
   padding-block: 15px;
-}
-.order__table tbody tr {
-  /* border-bottom: 1px solid #000; */
 }
 
 td {
@@ -77,10 +71,8 @@ td {
 @media screen and (max-width: 660px) {
   .orders__con {
     overflow-x: auto;
-    /* width: 640px; */
   }
   .order__table {
-    /* border: 2px solid red; */
     width: 700px;
     overflow-x: auto;
   }

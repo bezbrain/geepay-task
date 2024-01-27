@@ -1,3 +1,5 @@
+// NOT NEEDED AGAIN BUT KEPT HERE
+
 import { Chart } from "chart.js/auto";
 
 export const createGraph = async (graphRef) => {

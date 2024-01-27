@@ -3,7 +3,6 @@ import { logo } from "../../../../assets/icons/sideBarIcons";
 import styles from "./header.module.css";
 import SearchInput from "../searchInput/searchInput";
 import Calendar from "../calender/calendar";
-import { solarBell } from "../../../../assets/icons/headersIcons";
 import Profile from "../profile/profile";
 import { IoNotificationsOutline } from "react-icons/io5";
 
@@ -29,7 +28,6 @@ const Header = ({ isDark }) => {
         <SearchInput isDark={isDark} />
         <Calendar isDark={isDark} />
         <div className={styles.bell}>
-          {/* <img src={solarBell} alt="Bell" /> */}
           <IoNotificationsOutline
             className={`${
               isDark ? styles.calendar__dark : styles.calendar__light
