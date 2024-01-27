@@ -8,6 +8,7 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
+  Cell,
 } from "recharts";
 import RoundedBar from "./roundBar";
 import CustomTooltip from "./CustomTooltip";
@@ -49,6 +50,17 @@ const BarChartComp = ({ isDark }) => {
 
   const [hoveredBarIndex, setHoveredBarIndex] = useState(null);
 
+  const handleBarMouseOver = (data, index) => {
+    // console.log(data);
+    // console.log(index);
+    setHoveredBarIndex(index);
+  };
+  const handleBarMouseLeave = (data, index) => {
+    // console.log(data);
+    // console.log(index);
+    setHoveredBarIndex(null);
+  };
+
   return (
     <ResponsiveContainer
       width={isWindow <= 660 ? 800 : "100%"}
@@ -66,20 +78,45 @@ const BarChartComp = ({ isDark }) => {
           tickLine={false}
           axisLine={false}
         />
-
         <Tooltip
           content={<CustomTooltip isDark={isDark} />}
           // position={{ y: 0 }}
           cursor={{ fill: "transparent" }}
         />
-
+        <defs>
+          <linearGradient id="hoverGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#34CAA5" />
+            <stop offset="100%" stopColor="rgba(52, 202, 165, 0)" />
+          </linearGradient>
+        </defs>
         <Bar
           dataKey="count"
           barSize={30}
           radius={[20, 20, 0, 0]}
           fill={isDark ? "rgba(8, 249, 193, 0.1)" : "rgba(52, 202, 165, 0.10)"}
-          // isAnimationActive={false}
-        />
+          onMouseOver={handleBarMouseOver}
+          onMouseLeave={handleBarMouseLeave}
+        >
+          {data.map((entry, index) => (
+            <Cell
+              key={`cell-${index}`}
+              fill={
+                index === hoveredBarIndex
+                  ? "url(#hoverGradient)"
+                  : isDark
+                  ? "rgba(8, 249, 193, 0.1)"
+                  : "rgba(52, 202, 165, 0.10)"
+              }
+            />
+          ))}
+        </Bar>
+        ;
+        {/* <Bar
+          dataKey="count"
+          barSize={30}
+          radius={[20, 20, 0, 0]}
+          fill={isDark ? "rgba(8, 249, 193, 0.1)" : "rgba(52, 202, 165, 0.10)"}
+        /> */}
       </BarChart>
     </ResponsiveContainer>
   );
