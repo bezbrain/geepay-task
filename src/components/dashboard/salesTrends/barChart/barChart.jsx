@@ -34,7 +34,7 @@ const BarChartComp = ({ isDark }) => {
       maximumFractionDigits: 0,
     });
 
-  const yAxisTicks = [0, 5000, 10000, 20000, 30000, 40000, 50000];
+  const yAxisTicks = [0, 10000, 20000, 30000, 40000, 50000];
 
   const [isWindow, setIsWindow] = useState(window.innerWidth);
 
@@ -57,15 +57,19 @@ const BarChartComp = ({ isDark }) => {
   return (
     <ResponsiveContainer
       width={isWindow <= 660 ? 800 : "100%"}
-      height={isWindow >= 1130 || isWindow <= 990 ? 270 : 500}
+      height={isWindow >= 1130 || isWindow <= 990 ? 300 : 500}
     >
       <BarChart data={data} style={{ overflowY: "hidden" }}>
         <CartesianGrid vertical={false} strokeDasharray="2 2" />
-        <XAxis dataKey="name" />
+        <XAxis dataKey="name" tickLine={false} axisLine={false} />
         <YAxis
           ticks={yAxisTicks}
-          domain={[0, "dataMax"]}
+          // domain={[0, "dataMax"]}
+          domain={[0, 50000]}
           tickFormatter={formatYAxisTick}
+          tickLine={false}
+          textAnchor="end"
+          axisLine={false}
         />
 
         <Tooltip
@@ -78,7 +82,7 @@ const BarChartComp = ({ isDark }) => {
           barSize={30}
           radius={[20, 20, 0, 0]}
           fill={isDark ? "rgba(8, 249, 193, 0.1)" : "rgba(52, 202, 165, 0.10)"}
-          isAnimationActive={false}
+          // isAnimationActive={false}
         />
       </BarChart>
     </ResponsiveContainer>
