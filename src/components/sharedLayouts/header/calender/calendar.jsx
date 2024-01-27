@@ -11,6 +11,7 @@ const Calendar = ({ isDark }) => {
         className={`${
           isDark ? styles.calendar__dark : styles.calendar__light
         } ${styles.calendar__icon}`}
+        title="Nov 15, 2023"
       />
       <p
         className={`${
