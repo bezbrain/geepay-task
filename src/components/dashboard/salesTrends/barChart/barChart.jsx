@@ -15,27 +15,21 @@ import CustomYAxisTick from "./customYAxisTicks";
 
 const BarChartComp = ({ isDark }) => {
   const data = [
-    { name: "Jan", count: 6000 },
-    { name: "Feb", count: 21000 },
-    { name: "Mar", count: 4000 },
-    { name: "Apr", count: 28000 },
-    { name: "Mei", count: 9000 },
-    { name: "Jun", count: 45000 },
-    { name: "Jul", count: 9000 },
-    { name: "Aug", count: 23000 },
-    { name: "Sep", count: 32000 },
-    { name: "Okt", count: 4000 },
-    { name: "Nov", count: 30000 },
-    { name: "Des", count: 21000 },
+    { name: "Jan", count: 13000 },
+    { name: "Feb", count: 31000 },
+    { name: "Mar", count: 10000 },
+    { name: "Apr", count: 38000 },
+    { name: "Mei", count: 19000 },
+    { name: "Jun", count: 55000 },
+    { name: "Jul", count: 19000 },
+    { name: "Aug", count: 36000 },
+    { name: "Sep", count: 43000 },
+    { name: "Okt", count: 10000 },
+    { name: "Nov", count: 40000 },
+    { name: "Des", count: 35000 },
   ];
 
-  const formatYAxisTick = (tickValue) =>
-    tickValue.toLocaleString("en-US", {
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0,
-    });
-
-  const yAxisTicks = [0, 10000, 20000, 30000, 40000, 50000];
+  const yAxisTicks = [0, 10000, 20000, 30000, 40000, 50000, 60000];
 
   const [isWindow, setIsWindow] = useState(window.innerWidth);
 
@@ -68,14 +62,14 @@ const BarChartComp = ({ isDark }) => {
           ticks={yAxisTicks}
           // domain={[0, "dataMax"]}
           domain={[0, 50000]}
-          tickFormatter={formatYAxisTick}
+          // tickFormatter={formatYAxisTick}
           tickLine={false}
-          textAnchor="end"
           axisLine={false}
         />
 
         <Tooltip
           content={<CustomTooltip isDark={isDark} />}
+          // position={{ y: 0 }}
           cursor={{ fill: "transparent" }}
         />
 
