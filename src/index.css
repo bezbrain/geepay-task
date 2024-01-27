@@ -10,3 +10,57 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   overflow-x: hidden;
 }
+
+.small__screen {
+  display: none;
+}
+
+@media screen and (max-width: 660px) {
+  .small__screen {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+  }
+
+  .small__screen > div {
+    max-width: 400px;
+    text-align: center;
+    color: aquamarine;
+  }
+
+  .small__screen > div > p {
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .small__screen > div > button {
+    background-color: aquamarine;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  .add__show__page {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .small__screen > div {
+    margin-inline: 20px;
+  }
+  .small__screen > div > p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
