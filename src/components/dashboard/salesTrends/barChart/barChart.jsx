@@ -11,6 +11,7 @@ import {
 } from "recharts";
 import RoundedBar from "./roundBar";
 import CustomTooltip from "./CustomTooltip";
+import CustomYAxisTick from "./customYAxisTicks";
 
 const BarChartComp = ({ isDark }) => {
   const data = [
@@ -63,6 +64,7 @@ const BarChartComp = ({ isDark }) => {
         <CartesianGrid vertical={false} strokeDasharray="2 2" />
         <XAxis dataKey="name" tickLine={false} axisLine={false} />
         <YAxis
+          tick={<CustomYAxisTick />}
           ticks={yAxisTicks}
           // domain={[0, "dataMax"]}
           domain={[0, 50000]}
