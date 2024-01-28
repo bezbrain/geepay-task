@@ -19,13 +19,13 @@ To get stated, follow the following steps:
 Click [figma design](https://www.figma.com/file/IvIZCBKMfmY3Qty0Gqx6S8/Analytics-Dashboard?node-id=1%3A3&mode=dev) to see the design developed. The folllowing improvements were made:
 
 1. Overall responsive development: Made the design fully accessible on all possible screen sizes.
-2. At screen size less than or equal to 660px, there is a overlay telling user that the dashboard can be better viewed on larged screen tablet or desktop; but still allows users to "view anyway" while on mobile.
-3. Dark mode feature: The dark mode feature was integrated for those that prefer te dark version or those that their eyes are sensitive to too bright screens
+2. At screen sizes less than or equal to 660px, there is a overlay telling user that the dashboard can be better viewed on larged screen tablet or desktop; but still allows users to "view anyway" while on mobile.
+3. Dark mode feature: The dark mode feature was integrated for those that prefer the dark version or those that their eyes are sensitive to too bright screens.
 4. Header improvements:
 
-- At small screen, made the profile a dropdown for better user experience.
-- At small screen, removed the calender text "November, 15 2023" and turned it to `tooltip`
-- At small screen, the seach input keeps reducing then was removed and turned to dropdown
+- At small screens, made the profile a dropdown for better user experience.
+- At small screens, removed the calender text "November, 15 2023" and turned it to `tooltip`
+- At small screens, the seach input keeps reducing then was removed and turned to dropdown
 
 5. At 660px or less, the graph and "last order" section overflowed on the x-axis. This is so that at small screens users can still still see all information.
 6. Navigation guides: There are two major navigation guides which are:
