@@ -25,12 +25,12 @@ Click [figma design](https://www.figma.com/file/IvIZCBKMfmY3Qty0Gqx6S8/Analytics
 
 - At small screens, made the profile a dropdown for better user experience.
 - At small screens, removed the calender text "November, 15 2023" and turned it to `tooltip`
-- At small screens, the seach input keeps reducing then was removed and turned to dropdown
+- At small screens, the seach input keeps reducing then was removed and turned to dropdown.
 
-5. At 660px or less, the graph and "last order" section overflowed on the x-axis. This is so that at small screens users can still still see all information.
-6. Navigation guides: There are two major navigation guides which are:
+5. At 660px or less, the graph and "last order" sections overflowed on the x-axis. This is so that at small screens users can still still see all information.
+6. Navigations guide: There are two major navigations guide which are:
 
-- The overlay which tells the user before-hand that the dashboard can be better viewed on large screen tablet or desktop, but doesn't stop user from viewing on mobile if they want to
+- The overlay which tells the user before-hand that the dashboard can be better viewed on large screen tablet or desktop, but doesn't stop user from viewing on mobile if they want to.
 - The scroll-right guild: The scoll right is a guide to the users to make the user know the graph and 'last order' sections are scrollable on the x-axis if when their screen is 660px or less.
 
 To read more on Vite and its installation, visit [here](https://vitejs.dev/)
