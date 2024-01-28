@@ -33,6 +33,8 @@ Click [figma design](https://www.figma.com/file/IvIZCBKMfmY3Qty0Gqx6S8/Analytics
 - The overlay which tells the user before-hand that the dashboard can be better viewed on large screen tablet or desktop, but doesn't stop user from viewing on mobile if they want to.
 - The scroll-right: The scoll right is a guide to the users to make the user know the graph and 'last order' sections are scrollable on the x-axis when their screen is 660px or less.
 
+#### checkout [here](https://geepay-challenge-olawale.netlify.app) to view the final development and the features listed above
+
 To read more on Vite and its installation, visit [here](https://vitejs.dev/)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
