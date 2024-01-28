@@ -1,4 +1,4 @@
-# GeePay Challenge
+# GeegPay Challenge
 
 ### Getting Started
 
