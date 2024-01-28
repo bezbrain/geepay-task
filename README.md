@@ -11,8 +11,8 @@ To get stated, follow the following steps:
 
 ### Basic libraries used
 
-- React icons: For some icons needed `npm install react-icons`
-- Recharts: This was used to develop the bar chart `npm install recharts`
+- React icons: For some icons needed. To install, `npm install react-icons`
+- Recharts: This was used to develop the bar chart. To install, `npm install recharts`
 
 ### Improvements made to the design
 
