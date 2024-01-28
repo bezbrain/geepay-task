@@ -4,7 +4,7 @@
 
 To get stated, follow the following steps:
 
-- Install Vite app using `npm create-vite@latest`
+- Install Vite app using `npm create vite@latest`
 - In the course of the installation you'd be allowed to give name to you application.
 - When installation is completed navigate to the folder (name of your app), there in, you'll find you Vite app.
 - From there, you can start building.
