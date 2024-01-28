@@ -31,7 +31,7 @@ Click [figma design](https://www.figma.com/file/IvIZCBKMfmY3Qty0Gqx6S8/Analytics
 6. Navigations guide: There are two major navigations guide which are:
 
 - The overlay which tells the user before-hand that the dashboard can be better viewed on large screen tablet or desktop, but doesn't stop user from viewing on mobile if they want to.
-- The scroll-right: The scoll right is a guide to the users to make the user know the graph and 'last order' sections are scrollable on the x-axis if when their screen is 660px or less.
+- The scroll-right: The scoll right is a guide to the users to make the user know the graph and 'last order' sections are scrollable on the x-axis when their screen is 660px or less.
 
 To read more on Vite and its installation, visit [here](https://vitejs.dev/)
 
